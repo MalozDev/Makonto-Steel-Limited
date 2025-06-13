@@ -1,5 +1,7 @@
 {
   "projects": {
     "default": "makondo-steel-limited"
-  }
+  },
+  "targets": {},
+  "etags": {}
 }
