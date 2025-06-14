@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
 import "../assets/styles/Home.css";
 import Header from "../components/Header";
+import Footer from "../components/Footer";
+import { IoLogoWhatsapp } from "react-icons/io5";
 
 const Home = () => {
   return (
@@ -11,11 +13,6 @@ const Home = () => {
       {/* Hero Section */}
       <section className="hero">
         <div className="hero-background">
-          <img
-            src="/assets/images/hero-bg.jpg"
-            alt="Steel Construction"
-            className="hero-image"
-          />
           <div className="hero-overlay"></div>
         </div>
         <div className="hero-content">
@@ -260,7 +257,7 @@ const Home = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <img src="/assets/images/icons/whatsapp.svg" alt="WhatsApp" />
+                <IoLogoWhatsapp size={30} />
                 WhatsApp Us
               </a>
             </div>
@@ -269,91 +266,7 @@ const Home = () => {
       </section>
 
       {/* Footer */}
-      <footer className="footer">
-        <div className="container">
-          <div className="footer-content">
-            <div className="footer-section">
-              <div className="footer-brand">
-                <img
-                  src="/assets/images/logo-white.png"
-                  alt="Makondo Steel Logo"
-                  className="footer-logo"
-                />
-                <h3>Makondo Steel & Logistics Ltd.</h3>
-                <p>
-                  Building Zambia's future with premium steel solutions and
-                  exceptional service.
-                </p>
-              </div>
-            </div>
-
-            <div className="footer-section">
-              <h4>Services</h4>
-              <ul>
-                <li>
-                  <Link to="/services">Steel Fabrication</Link>
-                </li>
-                <li>
-                  <Link to="/services">Construction</Link>
-                </li>
-                <li>
-                  <Link to="/services">Logistics</Link>
-                </li>
-                <li>
-                  <Link to="/services">Consulting</Link>
-                </li>
-              </ul>
-            </div>
-
-            <div className="footer-section">
-              <h4>Company</h4>
-              <ul>
-                <li>
-                  <Link to="/about">About Us</Link>
-                </li>
-                <li>
-                  <Link to="/projects">Projects</Link>
-                </li>
-                <li>
-                  <Link to="/contact">Contact</Link>
-                </li>
-                <li>
-                  <Link to="/request-quote">Get Quote</Link>
-                </li>
-              </ul>
-            </div>
-
-            <div className="footer-section">
-              <h4>Contact Info</h4>
-              <div className="contact-info">
-                <p>📍 Industrial Area, Lusaka, Zambia</p>
-                <p>📞 +260 123 456 789</p>
-                <p>✉️ info@makondosteel.com</p>
-              </div>
-              <div className="social-links">
-                <a href="#" aria-label="Facebook">
-                  <img src="/assets/images/icons/facebook.svg" alt="Facebook" />
-                </a>
-                <a href="#" aria-label="LinkedIn">
-                  <img src="/assets/images/icons/linkedin.svg" alt="LinkedIn" />
-                </a>
-                <a href="#" aria-label="Instagram">
-                  <img
-                    src="/assets/images/icons/instagram.svg"
-                    alt="Instagram"
-                  />
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div className="footer-bottom">
-            <p>
-              &copy; 2025 Makondo Steel & Logistics Ltd. All rights reserved.
-            </p>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 };

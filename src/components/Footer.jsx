@@ -1,15 +1,30 @@
 import { Link } from "react-router-dom";
 import "../assets/styles/Footer.css";
+import { CiLogout } from "react-icons/ci";
+import {
+  IoLogoWhatsapp,
+  IoCallOutline,
+  IoMailOutline,
+  IoLocationOutline,
+  IoTimeOutline,
+} from "react-icons/io5";
+import {
+  FaFacebookF,
+  FaLinkedinIn,
+  FaInstagram,
+  FaYoutube,
+} from "react-icons/fa6";
+import { FaXTwitter } from "react-icons/fa6";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   const handleEmailClick = () => {
-    window.location.href = "mailto:info@makondosteel.com";
+    window.location.href = "mailto:malozdev@gmail.com";
   };
 
   const handlePhoneClick = () => {
-    window.location.href = "tel:+260123456789";
+    window.location.href = "tel:+260975623742";
   };
 
   const handleWhatsAppClick = () => {
@@ -25,13 +40,6 @@ const Footer = () => {
         <div className="footer-content">
           <div className="footer-section">
             <div className="footer-brand">
-              <Link to="/">
-                <img
-                  src="/assets/images/logo-white.png"
-                  alt="Makondo Steel Logo"
-                  className="footer-logo"
-                />
-              </Link>
               <h3>Makondo Steel & Logistics Ltd.</h3>
               <p>
                 Building Zambia's future with premium steel solutions and
@@ -45,23 +53,25 @@ const Footer = () => {
                   className="quick-action-btn"
                   title="Call us"
                 >
-                  <img src="/assets/images/icons/phone.svg" alt="Phone" />
+                  <IoCallOutline size={24} />
                   <span>Call Now</span>
                 </button>
+
                 <button
                   onClick={handleWhatsAppClick}
                   className="quick-action-btn whatsapp"
                   title="WhatsApp us"
                 >
-                  <img src="/assets/images/icons/whatsapp.svg" alt="WhatsApp" />
+                  <IoLogoWhatsapp size={24} />
                   <span>WhatsApp</span>
                 </button>
+
                 <button
                   onClick={handleEmailClick}
                   className="quick-action-btn"
                   title="Email us"
                 >
-                  <img src="/assets/images/icons/email.svg" alt="Email" />
+                  <IoMailOutline size={24} />
                   <span>Email</span>
                 </button>
               </div>
@@ -120,7 +130,7 @@ const Footer = () => {
             <h4>Get In Touch</h4>
             <div className="contact-info">
               <div className="contact-item">
-                <img src="/assets/images/icons/location.svg" alt="Location" />
+                <IoLocationOutline size={30} />
                 <div>
                   <strong>Head Office</strong>
                   <p>
@@ -132,16 +142,16 @@ const Footer = () => {
               </div>
 
               <div className="contact-item">
-                <img src="/assets/images/icons/phone.svg" alt="Phone" />
+                <IoCallOutline size={30} />
                 <div>
                   <strong>Phone</strong>
-                  <p>+260 123 456 789</p>
-                  <p>+260 987 654 321</p>
+                  <p>+260 977431672</p>
+                  <p>+260 975623742</p>
                 </div>
               </div>
 
               <div className="contact-item">
-                <img src="/assets/images/icons/email.svg" alt="Email" />
+                <IoMailOutline size={30} />
                 <div>
                   <strong>Email</strong>
                   <p>info@makondosteel.com</p>
@@ -150,7 +160,7 @@ const Footer = () => {
               </div>
 
               <div className="contact-item">
-                <img src="/assets/images/icons/clock.svg" alt="Hours" />
+                <IoTimeOutline size={30} />
                 <div>
                   <strong>Business Hours</strong>
                   <p>Mon - Fri: 8:00 AM - 5:00 PM</p>
@@ -164,47 +174,44 @@ const Footer = () => {
               <h5>Follow Us</h5>
               <div className="social-links">
                 <a
-                  href="https://facebook.com/makondosteel"
+                  href="#"
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="Facebook"
                 >
-                  <img src="/assets/images/icons/facebook.svg" alt="Facebook" />
+                  <FaFacebookF color="white" />
                 </a>
                 <a
-                  href="https://linkedin.com/company/makondosteel"
+                  href="#"
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="LinkedIn"
                 >
-                  <img src="/assets/images/icons/linkedin.svg" alt="LinkedIn" />
+                  <FaLinkedinIn color="white" />
                 </a>
                 <a
-                  href="https://instagram.com/makondosteel"
+                  href="#"
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="Instagram"
                 >
-                  <img
-                    src="/assets/images/icons/instagram.svg"
-                    alt="Instagram"
-                  />
+                  <FaInstagram color="white" />
                 </a>
                 <a
-                  href="https://twitter.com/makondosteel"
+                  href="#"
                   target="_blank"
                   rel="noopener noreferrer"
-                  aria-label="Twitter"
+                  aria-label="X"
                 >
-                  <img src="/assets/images/icons/twitter.svg" alt="Twitter" />
+                  <FaXTwitter color="white" />
                 </a>
                 <a
-                  href="https://youtube.com/makondosteel"
+                  href="#"
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="YouTube"
                 >
-                  <img src="/assets/images/icons/youtube.svg" alt="YouTube" />
+                  <FaYoutube color="white" />
                 </a>
               </div>
             </div>
@@ -229,7 +236,7 @@ const Footer = () => {
             />
             <button type="submit" className="newsletter-btn">
               Subscribe
-              <img src="/assets/images/icons/arrow-right.svg" alt="Subscribe" />
+              <CiLogout size={20} color="white" />
             </button>
           </form>
         </div>
@@ -246,20 +253,6 @@ const Footer = () => {
               <Link to="/terms-of-service">Terms of Service</Link>
               <Link to="/sitemap">Sitemap</Link>
             </div>
-          </div>
-          <div className="footer-certifications">
-            <img
-              src="/assets/images/certifications/iso-cert.png"
-              alt="ISO Certification"
-            />
-            <img
-              src="/assets/images/certifications/safety-cert.png"
-              alt="Safety Certification"
-            />
-            <img
-              src="/assets/images/certifications/quality-cert.png"
-              alt="Quality Certification"
-            />
           </div>
         </div>
       </div>

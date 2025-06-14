@@ -171,6 +171,7 @@
 
   .cta-link {
     margin-top: 1rem;
+    padding: 10px;
   }
 }
 
@@ -191,8 +192,8 @@
 /* Focus States for Accessibility */
 .nav-link:focus,
 .nav-toggle:focus {
-  outline: 2px solid var(--primary-orange);
-  outline-offset: 2px;
+  outline: none;
+  opacity: 0.7;
 }
 
 /* Smooth Transitions */

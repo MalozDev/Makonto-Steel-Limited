@@ -6,8 +6,7 @@
 }
 
 body {
-  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    sans-serif;
+  font-family: "Stardos Stencil", cursive;
   line-height: 1.6;
   color: #333;
   background-color: #ffffff;
@@ -39,6 +38,8 @@ body {
   display: flex;
   align-items: center;
   overflow: hidden;
+  font-size: 1.9rem;
+  font-weight: 700;
 }
 
 .hero-background {
@@ -49,13 +50,10 @@ body {
   height: 100%;
   z-index: -2;
 }
-
-.hero-image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+.hero-subtitle {
+  font-family: "Tinos", serif;
+  color: #410303;
 }
-
 .hero-overlay {
   position: absolute;
   top: 0;
@@ -110,7 +108,6 @@ body {
   padding: 14px 28px;
   border-radius: 30px;
   text-decoration: none;
-  font-weight: 600;
   transition: all 0.3s ease;
   display: inline-flex;
   align-items: center;
@@ -118,6 +115,7 @@ body {
   border: none;
   cursor: pointer;
   text-align: center;
+  font-size: 20px;
 }
 
 .btn-primary {
@@ -161,12 +159,6 @@ body {
 .btn-whatsapp:hover {
   background: #128c7e;
 }
-
-.btn-whatsapp img {
-  width: 20px;
-  height: 20px;
-}
-
 /* Stats Section */
 .stats {
   background: var(--light-gray);
@@ -581,7 +573,7 @@ body {
   }
 
   .hero-actions {
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
   }
 

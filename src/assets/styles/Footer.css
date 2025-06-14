@@ -23,16 +23,6 @@
   text-decoration: none;
 }
 
-.footer-logo {
-  height: 40px;
-  margin-bottom: 1rem;
-  transition: transform 0.3s ease;
-}
-
-.footer-logo:hover {
-  transform: scale(1.05);
-}
-
 .footer-brand p {
   line-height: 1.6;
   margin-bottom: 1.5rem;
@@ -50,9 +40,9 @@
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  background: var(--primary-orange);
+  background: var(----black);
   color: var(--white);
-  border: none;
+  border: solid 1px orange;
   padding: 8px 12px;
   border-radius: 20px;
   font-size: 0.9rem;
@@ -68,6 +58,7 @@
 
 .quick-action-btn.whatsapp {
   background: #25d366;
+  border: none;
 }
 
 .quick-action-btn.whatsapp:hover {
@@ -164,7 +155,8 @@
 .social-links a {
   width: 40px;
   height: 40px;
-  background: var(--primary-orange);
+  background-color: var(--black);
+  border: 2px solid var(--primary-orange);
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -299,23 +291,6 @@
   color: var(--primary-orange);
 }
 
-.footer-certifications {
-  display: flex;
-  gap: 1rem;
-  align-items: center;
-}
-
-.footer-certifications img {
-  height: 40px;
-  width: auto;
-  opacity: 0.7;
-  transition: opacity 0.3s ease;
-}
-
-.footer-certifications img:hover {
-  opacity: 1;
-}
-
 /* Mobile Responsive Styles */
 @media (max-width: 768px) {
   .nav-menu {
@@ -425,11 +400,6 @@
     font-size: 0.8rem;
     padding: 6px 10px;
   }
-
-  .quick-action-btn span {
-    display: none;
-  }
-
   .quick-action-btn img {
     width: 18px;
     height: 18px;
