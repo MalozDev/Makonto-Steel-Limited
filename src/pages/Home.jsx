@@ -1,56 +1,12 @@
-import { useState } from "react";
 import { Link } from "react-router-dom";
 import "../assets/styles/Home.css";
+import Header from "../components/Header";
 
 const Home = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
-
   return (
     <div className="home-page">
-      {/* Navigation */}
-      <nav className="navbar">
-        <div className="nav-container">
-          <div className="nav-brand">
-            <img
-              src="/assets/images/logo.png"
-              alt="Makondo Steel Logo"
-              className="logo"
-            />
-            <span className="brand-text">Makondo Steel</span>
-          </div>
-
-          <div className={`nav-menu ${isMenuOpen ? "active" : ""}`}>
-            <Link to="/" className="nav-link active">
-              Home
-            </Link>
-            <Link to="/services" className="nav-link">
-              Services
-            </Link>
-            <Link to="/projects" className="nav-link">
-              Projects
-            </Link>
-            <Link to="/about" className="nav-link">
-              About
-            </Link>
-            <Link to="/contact" className="nav-link">
-              Contact
-            </Link>
-            <Link to="/request-quote" className="nav-link cta-link">
-              Get Quote
-            </Link>
-          </div>
-
-          <div className="nav-toggle" onClick={toggleMenu}>
-            <span className="bar"></span>
-            <span className="bar"></span>
-            <span className="bar"></span>
-          </div>
-        </div>
-      </nav>
+      {/*Header component for nav bar*/}
+      <Header />
 
       {/* Hero Section */}
       <section className="hero">

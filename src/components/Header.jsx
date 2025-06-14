@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
-import "../assets/styles/header-footer.css";
+import { IoMenuOutline, IoCloseOutline } from "react-icons/io5";
+import logo from "../assets/images/MUKUNDO.png";
+import "../assets/styles/Header.css";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -38,15 +40,10 @@ const Header = () => {
     <nav className={`navbar ${isScrolled ? "scrolled" : ""}`}>
       <div className="nav-container">
         <div className="nav-brand">
-          <Link to="/" onClick={closeMenu}>
-            <img
-              src="/assets/images/logo.png"
-              alt="Makondo Steel Logo"
-              className="logo"
-            />
-            <span className="brand-text">Makondo Steel</span>
-          </Link>
+          <img src={logo} className="logo-img" alt="Makondo Steel Logo" />
         </div>
+
+        <span className="brand-text">Constructions</span>
 
         <div className={`nav-menu ${isMenuOpen ? "active" : ""}`}>
           <Link
@@ -94,14 +91,13 @@ const Header = () => {
         </div>
 
         <div className="nav-toggle" onClick={toggleMenu}>
-          <span className={`bar ${isMenuOpen ? "active" : ""}`}></span>
-          <span className={`bar ${isMenuOpen ? "active" : ""}`}></span>
-          <span className={`bar ${isMenuOpen ? "active" : ""}`}></span>
+          {isMenuOpen ? (
+            <IoCloseOutline size={35} />
+          ) : (
+            <IoMenuOutline size={35} />
+          )}
         </div>
       </div>
-
-      {/* Mobile menu overlay */}
-      {isMenuOpen && <div className="nav-overlay" onClick={closeMenu}></div>}
     </nav>
   );
 };
