@@ -3,6 +3,13 @@ import "../assets/styles/Home.css";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import { IoLogoWhatsapp } from "react-icons/io5";
+import { GiIBeam } from "react-icons/gi";
+import { IoConstructOutline } from "react-icons/io5";
+import { BsFillHouseGearFill } from "react-icons/bs";
+import residential from "../assets/images/residential.jpeg";
+import team from "../assets/images/team.jpeg";
+import wirehouse from "../assets/images/wirehouse2.jpeg";
+import complex from "../assets/images/morden-complex.jpeg";
 
 const Home = () => {
   return (
@@ -74,10 +81,7 @@ const Home = () => {
           <div className="services-grid">
             <div className="service-card">
               <div className="service-icon">
-                <img
-                  src="/assets/images/icons/fabrication.svg"
-                  alt="Steel Fabrication"
-                />
+                <GiIBeam size={100} color="gray" />
               </div>
               <h3 className="service-title">Steel Fabrication</h3>
               <p className="service-description">
@@ -91,10 +95,7 @@ const Home = () => {
 
             <div className="service-card">
               <div className="service-icon">
-                <img
-                  src="/assets/images/icons/construction.svg"
-                  alt="Construction"
-                />
+                <IoConstructOutline size={100} color="brown" />
               </div>
               <h3 className="service-title">Steel Construction</h3>
               <p className="service-description">
@@ -108,7 +109,7 @@ const Home = () => {
 
             <div className="service-card">
               <div className="service-icon">
-                <img src="/assets/images/icons/logistics.svg" alt="Logistics" />
+                <BsFillHouseGearFill size={100} color="green" />
               </div>
               <h3 className="service-title">Logistics & Supply</h3>
               <p className="service-description">
@@ -136,10 +137,7 @@ const Home = () => {
           <div className="projects-grid">
             <div className="project-card">
               <div className="project-image">
-                <img
-                  src="/assets/images/projects/project-1.jpg"
-                  alt="Commercial Building"
-                />
+                <img src={complex} alt="Commercial Building" />
                 <div className="project-overlay">
                   <div className="project-info">
                     <h4 className="project-title">Modern Commercial Complex</h4>
@@ -151,10 +149,7 @@ const Home = () => {
 
             <div className="project-card">
               <div className="project-image">
-                <img
-                  src="/assets/images/projects/project-2.jpg"
-                  alt="Industrial Warehouse"
-                />
+                <img src={wirehouse} alt="Industrial Warehouse" />
                 <div className="project-overlay">
                   <div className="project-info">
                     <h4 className="project-title">Industrial Warehouse</h4>
@@ -166,10 +161,7 @@ const Home = () => {
 
             <div className="project-card">
               <div className="project-image">
-                <img
-                  src="/assets/images/projects/project-3.jpg"
-                  alt="Residential Complex"
-                />
+                <img src={residential} alt="Residential Complex" />
                 <div className="project-overlay">
                   <div className="project-info">
                     <h4 className="project-title">Residential Steel Frame</h4>
@@ -230,10 +222,10 @@ const Home = () => {
               </div>
             </div>
             <div className="why-choose-image">
-              <img
-                src="/assets/images/team-work.jpg"
-                alt="Makondo Steel Team"
-              />
+              <h2 className="section-title" style={{ textAlign: "center" }}>
+                OUR TEAM
+              </h2>
+              <img src={team} alt="Makondo Steel Team" />
             </div>
           </div>
         </div>

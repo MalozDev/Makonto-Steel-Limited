@@ -29,7 +29,7 @@ const Footer = () => {
 
   const handleWhatsAppClick = () => {
     window.open(
-      "https://wa.me/260123456789?text=Hello%20Makondo%20Steel!%20I%20would%20like%20to%20inquire%20about%20your%20services.",
+      "https://wa.me/260975623742?text=Hello%20Makondo%20Steel!%20I%20would%20like%20to%20inquire%20about%20your%20services.",
       "_blank"
     );
   };

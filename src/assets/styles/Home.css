@@ -249,24 +249,13 @@ body {
 }
 
 .service-icon {
-  width: 80px;
-  height: 80px;
+  width: 100px;
+  height: 100px;
   margin: 0 auto 1.5rem;
-  background: linear-gradient(
-    135deg,
-    var(--primary-orange),
-    var(--dark-orange)
-  );
-  border-radius: 50%;
+  border-radius: 7px;
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.service-icon img {
-  width: 40px;
-  height: 40px;
-  filter: brightness(0) invert(1);
 }
 
 .service-title {
@@ -408,11 +397,7 @@ body {
 
 /* CTA Section */
 .cta-section {
-  background: linear-gradient(
-    135deg,
-    var(--primary-orange),
-    var(--dark-orange)
-  );
+  background-color: rgb(66, 44, 3);
   color: var(--white);
   padding: 5rem 0;
   text-align: center;
